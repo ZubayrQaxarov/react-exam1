@@ -1,0 +1,22 @@
+.topbar{
+    background:#f3f3f3;font-size:13px
+}
+.topbarRow{
+    height:36px;display:flex;align-items:center;justify-content:space-between
+}
+.topbarLeft{
+    color:#333
+}
+.topbarRight{
+    display:flex;
+    gap:12px;
+    align-items:center
+}
+.topbarBtn{
+    background:none;
+    border:none;
+    cursor:pointer;
+    font-size:13px;
+    color:#333;
+    padding:4px 6px
+}

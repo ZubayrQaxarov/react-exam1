@@ -1,0 +1,67 @@
+.features {
+    margin-top: -28px;
+    position: relative;
+    z-index: 2;
+}
+
+.strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.stripItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 16px;
+}
+
+.stripItem.teal {
+    background: #00c2a8;
+    color: #111;
+}
+
+.stripItem.dark {
+    background: #111;
+    color: #fff;
+}
+
+.stripIcon {
+    font-size: 20px;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stripTitle {
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.stripSub {
+    font-size: 12px;
+    opacity: .9;
+}
+
+@media (max-width: 900px) {
+    .strip {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 520px) {
+    .strip {
+        grid-template-columns: 1fr;
+    }
+}

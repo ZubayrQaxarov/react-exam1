@@ -1,0 +1,128 @@
+.header {
+    background: #fff;
+    border-bottom: 1px solid #ededed;
+}
+.headerRow {
+    display: grid;
+    grid-template-columns: 180px 1fr 180px;
+    gap: 16px;
+    align-items: center;
+    padding: 16px 0;
+}
+.brand {
+    font-weight: 900;
+    color: #111;
+    text-decoration: none;
+    letter-spacing: .4px;
+}
+.searchBox {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 44px;
+}
+.catBtn {
+    border: none;
+    background: #f5f5f5;
+    height: 100%;
+    padding: 0 14px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.searchInput {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 14px;
+    font-size: 13px;
+}
+.searchBtn {
+    border: none;
+    background: #111;
+    color: #fff;
+    height: 100%;
+    padding: 0 16px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+}
+.iconBtn {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconBtn img {
+    width: 18px;
+    height: 18px;
+    opacity: .8;
+}
+.burger {
+    display: none;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+.nav {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding: 0 0 14px;
+}
+.navLink {
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 8px;
+    border-radius: 10px;
+}
+.navLink.active {
+    background: rgba(0,194,168,.14);
+    color: #00c2a8;
+}
+@media (max-width: 900px) {
+    .headerRow {
+        grid-template-columns: 150px 1fr 150px;
+    }
+    .nav {
+        overflow: auto;
+    }
+}
+@media (max-width: 700px) {
+    .headerRow {
+        grid-template-columns: 1fr;
+    }
+    .searchBox {
+        display: none;
+    }
+    .burger {
+        display: flex;
+    }
+    .nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0 14px;
+    }
+    .nav.open {
+        display: flex;
+    }
+}

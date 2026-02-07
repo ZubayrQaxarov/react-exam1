@@ -1,0 +1,7 @@
+.catGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.catCard{background:#fff;border:1px solid #ededed;border-radius:12px;padding:18px;min-height:140px}
+.catTitle{font-size:13px;font-weight:900;margin-bottom:10px}
+.catList{display:flex;flex-direction:column;gap:6px;color:#666;font-size:12px}
+.catLink{margin-top:10px;font-size:12px;color:#00c2a8;font-weight:900;cursor:pointer}
+@media(max-width:1000px){.catGrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.catGrid{grid-template-columns:1fr}}
